@@ -1,0 +1,43 @@
+.forecastContainer {
+    width: 100%;
+    overflow-x: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.forecastFlexContainer {
+    display: flex;
+    gap: 20px;
+    white-space: nowrap;
+    justify-content: center;
+}
+
+.miniCard {
+    flex: 0 0 auto;
+    width: 150px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.miniCardIcon {
+    width: 40px;
+    height: 40px;
+}
+
+.miniCardDay,
+.miniCardTemp {
+    margin: 5px 0;
+}
+
+.miniCardSeparator {
+    margin: 10px 0;
+}

@@ -1,0 +1,103 @@
+.glassCard {
+  background: rgba(201, 186, 186, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  width: 100%;
+  max-width: 25rem;
+  height: 25rem;
+  min-height: 20rem;
+  box-sizing: border-box;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0rem;
+}
+
+.weatherSection {
+  margin-bottom: 0.5rem;
+}
+
+.weatherIcon {
+  width: 4rem;
+  height: 4rem;
+}
+
+.temperature {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.location {
+  font-size: 1.50rem;
+  font-weight: bold;
+  margin-bottom: 0.rem;
+  text-align: center;
+}
+
+.dateTime {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.windHumidity {
+  margin-bottom: 1rem;
+}
+
+.windSpeed, .humidity {
+  font-weight: bold;
+  background: #007BFF;
+  padding: 0.5rem;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+}
+
+.humidity {
+  background: #28A745;
+}
+
+.heatIndex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.heatIndexLabel {
+  font-weight: bold;
+}
+
+.heatIndexValue {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.separator {
+  background: #6C757D;
+  border: none;
+  height: 2px;
+  margin: 1rem 0;
+}
+
+.condition {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.centered-location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
