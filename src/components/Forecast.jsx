@@ -6,7 +6,7 @@ import rain from '../assets/icons/rain.png';
 import snow from '../assets/icons/snow.png';
 import storm from '../assets/icons/storm.png';
 import wind from '../assets/icons/windy.png';
-import './Forecast.css'; // Import the CSS file
+import './Forecast.css'; 
 
 const getDayIndex = (dayName) => {
   const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];

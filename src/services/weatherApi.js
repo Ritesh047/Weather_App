@@ -1,7 +1,7 @@
-// src/services/weatherApi.js
+
 import axios from 'axios';
 
-const API_KEY = 'c0b230e43f64bd1be316ddcf919759bb';  // Replace with your actual API key
+const API_KEY = 'c0b230e43f64bd1be316ddcf919759bb';  
 const BASE_URL = 'https://api.openweathermap.org/data/2.5';
 
 export const getCurrentWeatherByLocation = (lat, lon) => {

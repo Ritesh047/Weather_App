@@ -78,10 +78,10 @@ body, html {
 .search-container {
     display: flex;
     justify-content: center;
-    margin-bottom: 0px;
-    padding: 5px;
+    margin-bottom: 5px;
+    padding: 5px;   
     width: 100%;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 .search-input {
