@@ -1,4 +1,4 @@
-// src/redux/weatherSlice.js
+
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import { getCurrentWeatherByLocation, getWeatherByCity, getForecastByCity } from '../services/weatherApi';
 

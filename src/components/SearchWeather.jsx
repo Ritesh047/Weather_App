@@ -15,11 +15,11 @@ const Container = styled(Box)({
   background: 'rgba(255, 255, 255, 0.5)',
   backdropFilter: 'blur(20px)',
   borderRadius: '8px',
-  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Optional: Shadow for better visibility
+  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', 
 });
 
 const StyledButton = styled(Button)({
-  marginLeft: '10px', // Adjust spacing as needed
+  marginLeft: '10px', 
 });
 
 const SearchWeather = ({ onSearch }) => {
@@ -36,7 +36,7 @@ const SearchWeather = ({ onSearch }) => {
           type: 'like',
           sort: 'population',
           cnt: 10,
-          appid: 'c0b230e43f64bd1be316ddcf919759bb', // Replace with your OpenWeatherMap API key
+          appid: 'c0b230e43f64bd1be316ddcf919759bb', 
         },
       });
       const cities = response.data.list.map((city) => `${city.name}, ${city.sys.country}`);
@@ -50,7 +50,7 @@ const SearchWeather = ({ onSearch }) => {
   const handleSearch = () => {
     if (city.trim()) {
       onSearch(city.trim());
-      setCity(''); // Clear input field after search
+      setCity(''); 
     }
   };
 
@@ -77,7 +77,7 @@ const SearchWeather = ({ onSearch }) => {
             {...params}
             value={city}
             onChange={(e) => setCity(e.target.value)}
-            onKeyDown={handleKeyDown} // Add onKeyDown event handler
+            onKeyDown={handleKeyDown} 
             placeholder="Enter city or country"
             variant="outlined"
             size="small"

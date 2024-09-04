@@ -45,12 +45,12 @@ const Forecast = ({ forecast }) => {
             temp: item.main.temp,
             iconString: item.weather[0].description,
             dayName,
-            count: 1, // Add count to calculate the correct average
+            count: 1, 
           };
         } else {
-          // Update the temperature by summing and dividing by the count
+          
           acc[dayName].temp = (acc[dayName].temp * acc[dayName].count + item.main.temp) / (acc[dayName].count + 1);
-          acc[dayName].count += 1; // Increment count
+          acc[dayName].count += 1; 
         }
 
         return acc;
@@ -58,7 +58,7 @@ const Forecast = ({ forecast }) => {
 
       const daysArray = Object.values(forecastByDay)
         .sort((a, b) => getDayIndex(a.dayName) - getDayIndex(b.dayName))
-        .slice(0, 7); // Get the next 7 days
+        .slice(0, 7); 
 
       setSevenDayForecast(daysArray);
     }
@@ -80,7 +80,7 @@ const Forecast = ({ forecast }) => {
     } else if (iconString.toLowerCase().includes('wind')) {
       return wind;
     } else {
-      return sun; // Default icon
+      return sun; 
     }
   };
 
